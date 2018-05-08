@@ -1,4 +1,4 @@
-fish_data <- read.csv("data_/Gaeta_etal_CLC_data.csv")
+fish_data <- read.csv("Gaeta_etal_CLC_data_1.csv")
 
 library(dplyr)
 library(ggplot2)
@@ -15,5 +15,6 @@ fish_data_cat = fish_data %>%
   filter(scalelength > 1)
 
 ggplot(fish_data_cat, aes(length, scalelength, color=lakeid))+
-  geom_point()
+  geom_point()+
+  theme_classic()
                         
