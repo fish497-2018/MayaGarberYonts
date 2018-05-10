@@ -18,3 +18,8 @@ ggplot(fish_data_cat, aes(length, scalelength, color=lakeid))+
   geom_point()+
   theme_classic()
                         
+
+
+#Plot histogram of scale length by fish categorical size
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()
