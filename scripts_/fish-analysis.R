@@ -22,12 +22,21 @@ fish_data_cat = fish_data %>%
 
 # 4 Commit Multiple Files
 
+# renamed data so that is it now -> _1.csv
 
-
-
+# 5 Pushing Changes
 
 #Histogram, lake id by color
 ggplot(fish_data_cat, aes(length, scalelength, color=lakeid))+
   geom_point()+
   theme_classic()
                         
+# 6 Pushing/Pulling
+# Steven Code
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()+
+  stat_bin(bins=80)  #change bins to 80
+
+ggsave("scale_hist_by_length.jpg")
+
+
