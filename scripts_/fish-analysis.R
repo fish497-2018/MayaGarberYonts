@@ -1,7 +1,15 @@
-fish_data <- read.csv("Gaeta_etal_CLC_data_1.csv")
+
 
 library(dplyr)
 library(ggplot2)
+
+# 1 
+#GitHub accout created
+
+# 2 Solo Commit
+#reads in our data
+fish_data <- read.csv("Gaeta_etal_CLC_data_1.csv")
+
 
 #this pipes in the inital data and creates a column with fish length
 
