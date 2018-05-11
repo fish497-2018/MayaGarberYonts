@@ -5,3 +5,5 @@
 # Finally we added a histogram comparing scale length and length. Color coded by Lake ID.
 # Renamed data so it is now numbered '_1.csv'
 # Pushed changes to GitHub
+# Pulled Steven's histogram code and modified to bins = 80
+# Created histogram .jpeg and pushed all back to GitHub
